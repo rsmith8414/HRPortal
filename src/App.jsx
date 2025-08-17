@@ -6,6 +6,7 @@ import Signup from './pages/Signup';
 import EmployeeDashboard from './pages/EmployeeDashboard';
 import HRDashboard from './pages/HRDashboard';
 import NotFound from './pages/NotFound';
+import LeaveRequest from './pages/LeaveRequest';
 
 export default function App() {
   const currentUser = JSON.parse(localStorage.getItem("user")); // was 'user' before
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/employee" element={currentUser?.role === "employee" ? <EmployeeDashboard /> : <Navigate to="/login" />} />
+        <Route path="/leave" element={<LeaveRequest />} />
         <Route path="/hr" element={currentUser?.role === "hr" ? <HRDashboard /> : <Navigate to="/login" />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

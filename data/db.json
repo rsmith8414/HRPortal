@@ -2,10 +2,38 @@
   "users": [
     {
       "id": 1,
-      "name": "HR Admin",
-      "email": "hr@corp.com",
+      "name": "Jane HR",
+      "email": "hr@example.com",
       "password": "hr123",
       "role": "hr"
+    },
+    {
+      "id": 2,
+      "name": "John Employee",
+      "email": "john@example.com",
+      "password": "1234",
+      "role": "employee"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Sarah Connor",
+      "position": "Engineer"
+    },
+    {
+      "id": 2,
+      "name": "Tom Riddle",
+      "position": "Analyst"
+    }
+  ],
+  "leaves": [
+    {
+      "id": 1,
+      "employee": "John Employee",
+      "from": "2025-08-20",
+      "to": "2025-08-22",
+      "reason": "Vacation"
     }
   ]
 }

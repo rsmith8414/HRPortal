@@ -17,6 +17,7 @@ export default function NavBar() {
       {user?.role === "employee" && <Link to="/employee">Employee</Link>}
       {user?.role === "hr" && <Link to="/hr">HR</Link>}
       {user && <button onClick={handleLogout}>Logout</button>}
-    </nav>
+    <a href="/leave">Leave</a>
+</nav>
   );
 }

@@ -1,0 +1,11 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "HR Admin",
+      "email": "hr@corp.com",
+      "password": "hr123",
+      "role": "hr"
+    }
+  ]
+}
